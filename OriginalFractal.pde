@@ -3,8 +3,8 @@ int e=40;
 
 public void setup ()
 {
-	size(800,2800);
-	frameRate(40);	
+	size(700,700);
+	frameRate(50);	
 }
 public void draw()
 {
