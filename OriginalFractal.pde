@@ -1,4 +1,4 @@
-int t=50;
+int aps=50;
 int e=40;
 
 public void setup ()
@@ -23,28 +23,31 @@ if(m<=50){
 double x= r*Math.cos(dRadians);
 double y=r* Math.sin(dRadians);
 
-if(t<=100)
+if(aps<=100)
 {
-	t++;
+	aps++;
 }
 else
-	{t--;}
+{
+	t--;
+}
 fill(255);
-//strokeWeight(2);
 ellipse(140+(int)x,150+(int)y,(int)w,(int)h);
 }
 else
 {
 noFill();
-double x=r* Math.cos(dRadians);
+double x=r*Math.cos(dRadians);
 double y=r*Math.sin(dRadians);
-if(t<=50)
+if(aps<=50)
 {
-	t++;
+	aps++;
 }
 else
-	{t--;}
-fill(154,51,26,t);
+{
+	aps--;
+}
+fill(254,121,126,aps);
 noStroke();
 ellipse(400+(int)x,350+(int)y,(int)w,(int)h);
 fractal(r+5,dRadians-9,w+2,h+2, m-1);
